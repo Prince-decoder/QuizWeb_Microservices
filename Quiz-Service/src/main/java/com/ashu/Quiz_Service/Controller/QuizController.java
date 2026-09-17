@@ -29,7 +29,7 @@ public class QuizController {
         return quizService.getQuestions(id);
     }
 
-    @GetMapping("result")
+    @PostMapping("result")
     public ResponseEntity<Integer> getResult(@RequestBody List<SubmitModel> model)
     {
         return quizService.getResult(model);
